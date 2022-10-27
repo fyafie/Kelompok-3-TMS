@@ -1,4 +1,4 @@
-Firpackage com.juaracoding.cucumber.utils;
+package com.juaracoding.cucumber.utils;
 
 public class Constants {
     public static final int TIMEOUT = 10;
