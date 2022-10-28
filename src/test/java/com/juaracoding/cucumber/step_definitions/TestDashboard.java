@@ -28,7 +28,8 @@ public class TestDashboard {
 
     @Then("User on menu Dashboard")
     public void user_on_menu_dashboard() {
-        Assert.assertEquals(dashboardPage.getTxtDashboard(), "Launching Soon");
+        //Sengaja fail untuk uji fungsi screenshot
+        Assert.assertEquals(dashboardPage.getTxtDashboard(), "Launching Soo");
         extentTest.log(LogStatus.PASS, "User on menu Dashboard");
     }
 
