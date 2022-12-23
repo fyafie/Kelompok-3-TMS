@@ -20,18 +20,12 @@ public class LoginPage {
     @FindBy(name = "password")
     WebElement password;
 
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button")
+    @FindBy(xpath = "//button[@type='submit']")
     WebElement btnLogin;
-
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div[2]/div[2]/div/div[1]/div[1]/div[1]/h5")
-    WebElement txtEmployeeInformation;
     
-    @FindBy(xpath = "//*[@id=\"app\"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]/div[1]/p")
-    WebElement txtInvalidCredentials;
+    @FindBy(xpath = "//h1[@class='page-header']")
+    WebElement dashboardTxt;
     
-    @FindBy(xpath = "//div[@class='orangehrm-login-slot-wrapper']//div[1]//div[1]//span[1]")
-    WebElement txtRequired;
-
     public void login(String username, String password){
         this.username.sendKeys(username);
         this.password.sendKeys(password);
@@ -40,17 +34,8 @@ public class LoginPage {
     public void clickBtnLogin(){
         btnLogin.click();
     }
-
-    public String getTxtEmployeeInformation(){
-        return txtEmployeeInformation.getText();
-    }
     
-    public String getTxtInvalidCredentials(){
-        return txtInvalidCredentials.getText();
+    public String getDashboardTxt() {
+    	return dashboardTxt.getText();
     }
-    
-    public String getTxtRequired(){
-        return txtRequired.getText();
-    }
-
 }

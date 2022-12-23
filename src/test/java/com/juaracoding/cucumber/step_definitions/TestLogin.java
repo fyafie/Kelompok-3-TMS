@@ -22,17 +22,26 @@ public class TestLogin {
     }
 
     // Test Case One
-    @When("User go to Web HRM")
+    @When("User go to Web SIT")
     public void user_go_to_Web_HRM() {
         driver.get(Constants.URL);
-        extentTest.log(LogStatus.PASS, "User go to Web HRM");
-
+        extentTest.log(LogStatus.PASS, "User go to Web SIT");
+    }
+    //User enter username password invalid
+    @When("User enter username password invalid")
+    public void user_enter_username_password_invalid() {
+    	loginPage.login("username", "password");
+        extentTest.log(LogStatus.PASS, "User enter invalid username & invalid password");
+    }
+    @Then("User invalid credentials")
+    public void user_invalid_credentials() {
+        
     }
 
-    @And("User enter username password invalid")
-    public void user_enter_username_password_invalid() {
-        loginPage.login("Admin", "admin1234");
-        extentTest.log(LogStatus.PASS, "User enter username password invalid");
+    @And("User enter username password valid")
+    public void user_enter_username_password_valid() {
+        loginPage.login("admin_tms", "d1k4@passw0rd");
+        extentTest.log(LogStatus.PASS, "User enter username password valid");
     }
 
     @And("User click button login")
@@ -40,30 +49,10 @@ public class TestLogin {
         loginPage.clickBtnLogin();
         extentTest.log(LogStatus.PASS, "User click button login");
     }
-
-    @Then("User invalid credentials")
-    public void user_invalid_credentials() {
-        Assert.assertEquals(loginPage.getTxtInvalidCredentials(), "Invalid credentials");
-        extentTest.log(LogStatus.PASS, "User invalid credentials");
-    }
-
-    // Test Case Two
-    @When("User enter username password valid")
-    public void user_enter_username_password_valid() {
-        loginPage.login("Admin", "admin123");
-        extentTest.log(LogStatus.PASS, "User enter username password valid");
-    }
-
-    @And("User click button login valid")
-    public void user_click_button_login_valid() {
-        loginPage.clickBtnLogin();
-        extentTest.log(LogStatus.PASS, "User click button login valid");
-    }
-
+    
     @Then("User valid credentials")
     public void user_valid_credentials() {
-
-        extentTest.log(LogStatus.PASS, "User valid credentials");
+    	Assert.assertEquals(loginPage.getDashboardTxt(), "Dashboard");
+    	extentTest.log(LogStatus.PASS, "User valid credentials");
     }
-
 }
