@@ -27,17 +27,28 @@ public class TestLogin {
         driver.get(Constants.URL);
         extentTest.log(LogStatus.PASS, "User go to Web SIT");
     }
-    //User enter username password invalid
-    @When("User enter username password invalid")
-    public void user_enter_username_password_invalid() {
+    //User login invalid username and invalid password
+    @When("User enter valid username invalid password")
+    public void user_enter_valid_username_invalid_password() {
     	loginPage.login("username", "password");
         extentTest.log(LogStatus.PASS, "User enter invalid username & invalid password");
     }
+    //User login invalid username and null password
+    @When("User enter invalid username null password")
+    public void user_enter_invalid_username_null_password() {
+    	loginPage.login("username", "");
+        extentTest.log(LogStatus.PASS, "User enter invalid username & null password");
+    }
     @Then("User invalid credentials")
     public void user_invalid_credentials() {
-        
+    	Assert.assertEquals(loginPage.getInvalidAlert(), "×");
+        extentTest.log(LogStatus.PASS, "User get invalid alert");
     }
-
+    @Then("User get null alert")
+    public void user_get_null_alert() {
+    	Assert.assertEquals(loginPage.getNullAlert(), "");
+    	extentTest.log(LogStatus.PASS, "User get null alert");
+    }
     @And("User enter username password valid")
     public void user_enter_username_password_valid() {
         loginPage.login("admin_tms", "d1k4@passw0rd");

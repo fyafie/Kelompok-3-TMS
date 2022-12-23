@@ -26,6 +26,9 @@ public class LoginPage {
     @FindBy(xpath = "//h1[@class='page-header']")
     WebElement dashboardTxt;
     
+    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']/button")
+    WebElement invalidAlert;
+    
     public void login(String username, String password){
         this.username.sendKeys(username);
         this.password.sendKeys(password);
@@ -37,5 +40,12 @@ public class LoginPage {
     
     public String getDashboardTxt() {
     	return dashboardTxt.getText();
+    }
+    
+    public String getInvalidAlert() {
+		return invalidAlert.getText();
+	}
+    public String getNullAlert() {
+    	return password.getText();
     }
 }
