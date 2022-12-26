@@ -14,6 +14,9 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = "//h1")
+    WebElement invalidWebsite;
+    
     @FindBy(name = "username")
     WebElement username;
 
@@ -29,6 +32,15 @@ public class LoginPage {
     @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']/button")
     WebElement invalidAlert;
     
+    @FindBy(xpath = "//div[1]/div[1]/small")
+    WebElement validWebsite;
+    
+    public String getInvalidWebsite() {
+    	return invalidWebsite.getText();
+    }
+    public String getValidWebsite() {
+    	return validWebsite.getText();
+    }
     public void login(String username, String password){
         this.username.sendKeys(username);
         this.password.sendKeys(password);
@@ -45,7 +57,10 @@ public class LoginPage {
     public String getInvalidAlert() {
 		return invalidAlert.getText();
 	}
-    public String getNullAlert() {
+    public String getPasswordNullAlert() {
     	return password.getText();
+    }
+    public String getUsernameNullAlert() {
+    	return username.getText();
     }
 }
