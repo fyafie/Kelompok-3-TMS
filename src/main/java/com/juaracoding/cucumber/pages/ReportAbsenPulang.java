@@ -6,21 +6,18 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ReportPage {
+public class ReportAbsenPulang {
     private WebDriver driver;
-    public ReportPage(){
+    public ReportAbsenPulang(){
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//h1[@class='page-header']")
-    WebElement txtDashboard;
-
     @FindBy(xpath =  "//span[normalize-space()='Report Absen']")
-    WebElement menuReportAbsen;
+    WebElement menuReportAbsenPulang;
 
-    @FindBy(xpath = "//a[normalize-space()='Absen Masuk']")
-    WebElement absenMasuk;
+    @FindBy(xpath = "//a[normalize-space()='Absen Pulang']")
+    WebElement absenPulang;
 
     @FindBy(xpath = "//div[contains(text(),'-- Position --')]")
     WebElement position;
@@ -31,14 +28,12 @@ public class ReportPage {
     @FindBy(xpath = "//div[contains(text(),'-- Branch --')]")
     WebElement branch;
 
-//    @FindBy(xpath = "//span[normalize-space()='ALL']")
     @FindBy(xpath = "//div[@aria-expanded='true']//span[@class='text'][normalize-space()='ALL']")
     WebElement branchAll;
 
     @FindBy(xpath = "//button[@title='-- Unit --']//div[@class='filter-option']")
     WebElement unit;
 
-//    @FindBy(xpath = "//span[normalize-space()='ALL']")
     @FindBy(xpath = "//div[@aria-expanded='true']//span[@class='text'][normalize-space()='ALL']")
     WebElement unitAll;
 
@@ -51,16 +46,12 @@ public class ReportPage {
     @FindBy(xpath = "//input[@name='submit']")
     WebElement submit;
 
-    public String getTxtDashboard(){
-        return txtDashboard.getText();
-    }
-
     public void menuReportAbsen(){
-        menuReportAbsen.click();
+        menuReportAbsenPulang.click();
     }
 
-    public void absenMasuk(){
-        absenMasuk.click();
+    public void absenPulang(){
+        absenPulang.click();
     }
 
     public void position(){
@@ -97,5 +88,4 @@ public class ReportPage {
     public void submit(){
         submit.click();
     }
-
 }

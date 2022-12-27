@@ -61,6 +61,4 @@ public class Hooks {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(0,"+vertical+")");
     }
-
-
 }
