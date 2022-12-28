@@ -101,6 +101,18 @@ public class TestReportAbsenPulang {
         alert.accept();
     }
 
+    @When("TCC.pulang user invalid input start date")
+    public void tcc_pulang_user_invalid_input_start_date() {
+        reportAbsenPulang.startDate("2022-09-01");
+        extentTest.log(LogStatus.PASS, "user input start date");
+    }
+
+    @When("TCC.pulang user invalid input end date")
+    public void tcc_pulang_user_invalid_input_end_date() {
+        reportAbsenPulang.endDate("2022-10-11");
+        extentTest.log(LogStatus.PASS, "user input end date");
+    }
+
 
 
 
