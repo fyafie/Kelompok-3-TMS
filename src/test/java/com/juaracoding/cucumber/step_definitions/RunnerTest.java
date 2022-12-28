@@ -7,6 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         features = {"src/main/resources/features/01.Login.feature",
                 "src/main/resources/features/02.AbsenMasuk.feature",
                 "src/main/resources/features/03.AbsenPulang.feature"
+//                "src/main/resources/features/04.AbsenSakit.feature"
         },
         glue = "com.juaracoding.cucumber.step_definitions",
         plugin = {"pretty","html:target/cucumber-reports.html","json:target/cucumber.json"})

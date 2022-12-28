@@ -6,6 +6,8 @@ import com.relevantcodes.extentreports.LogStatus;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
@@ -24,7 +26,7 @@ public class TestReportAbsenMasuk {
         Assert.assertEquals(reportPage.getTxtDashboard(), "Dashboard");
         extentTest.log(LogStatus.PASS, "User on menu Requirement");
     }
-    @And("User click Report Absen")
+    @When("User click Report Absen")
     public void user_click_report_absen() {
         reportPage.menuReportAbsen();
         extentTest.log(LogStatus.PASS, "User click Report Absen");
@@ -47,7 +49,17 @@ public class TestReportAbsenMasuk {
         reportPage.positionAll();
         extentTest.log(LogStatus.PASS, "user select position");
     }
-
+    @And("User invalid report masuk")
+    public void user_invalid_report_masuk() {
+        reportPage.submit();
+        extentTest.log(LogStatus.PASS, "user invalid report masuk");
+    }
+    @Then("user get alert no data")
+    public void user_get_alert_no_data() {
+        Alert alert = driver.switchTo().alert();
+        String alertMessage= driver.switchTo().alert().getText();
+        alert.accept();
+    }
     @And("user click branch")
     public void user_click_branch() {
         reportPage.branch();
@@ -63,7 +75,7 @@ public class TestReportAbsenMasuk {
     @And("user click unit")
     public void user_click_unit() {
         reportPage.unit();
-        extentTest.log(LogStatus.PASS, "user clict unit");
+        extentTest.log(LogStatus.PASS, "user click unit");
     }
 
     @And("user select unit")
@@ -83,10 +95,30 @@ public class TestReportAbsenMasuk {
         reportPage.endDate("2022-09-11");
         extentTest.log(LogStatus.PASS, "user input end date");
     }
+    @When("user invalid input start date")
+    public void user_invalid_input_start_date() {
+        reportPage.startDate("2022-09-1");
+        extentTest.log(LogStatus.PASS, "user input end date");
+    }
+
+    @When("user invalid input end date")
+    public void user_invalid_input_end_date() {
+        reportPage.endDate("2022-10-11");
+        extentTest.log(LogStatus.PASS, "user input end date");
+    }
+
+    @Then("user get alert maximal date")
+    public void user_get_alert_maximal_date() {
+        Alert alert = driver.switchTo().alert();
+        String alertMessage= driver.switchTo().alert().getText();
+        alert.accept();
+    }
 
     @Then("User valid report masuk")
     public void user_valid_report_masuk() {
         reportPage.submit();
         extentTest.log(LogStatus.PASS, "user valid report masuk");
+//        Assert.assertEquals(reportPage.getTxtDashboard(), "Dashboard");
+//        extentTest.log(LogStatus.PASS, "User valid credentials");
     }
 }
