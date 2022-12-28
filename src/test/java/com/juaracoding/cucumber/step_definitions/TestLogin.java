@@ -42,6 +42,7 @@ public class TestLogin {
     
     @Then("User valid credentials website")
     public void user_valid_credentials_website() {
+    	Hooks.delay(1);
     	Assert.assertEquals(loginPage.getValidWebsite(), "Login menggunakan NIK & DOB");
     	extentTest.log(LogStatus.PASS, "User valid credentials website");
     }
@@ -113,6 +114,7 @@ public class TestLogin {
     
     @Then("User invalid credentials")
     public void user_invalid_credentials() {
+    	Hooks.delay(1);
     	Assert.assertEquals(loginPage.getInvalidAlert(), "×");
         extentTest.log(LogStatus.PASS, "User get invalid password alert");
     }
@@ -141,6 +143,7 @@ public class TestLogin {
     
     @Then("User valid credentials")
     public void user_valid_credentials() {
+    	Hooks.delay(1);
     	Assert.assertEquals(loginPage.getDashboardTxt(), "Dashboard");
     	extentTest.log(LogStatus.PASS, "User valid credentials");
     }
