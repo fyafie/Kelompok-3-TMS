@@ -1,6 +1,7 @@
 package com.juaracoding.cucumber.pages;
 
 import com.juaracoding.cucumber.drivers.DriverSingleton;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,21 +26,24 @@ public class ReportPage {
     @FindBy(xpath = "//div[contains(text(),'-- Position --')]")
     WebElement position;
 
-    @FindBy(xpath = "//span[normalize-space()='ALL']")
+//    @FindBy(xpath = "//span[normalize-space()='ALL']")
+    @FindBy(xpath = "//div[@class='dropdown-menu show']//input[@aria-label='Search']")
     WebElement positionAll;
 
     @FindBy(xpath = "//div[contains(text(),'-- Branch --')]")
     WebElement branch;
 
 //    @FindBy(xpath = "//span[normalize-space()='ALL']")
-    @FindBy(xpath = "//div[@aria-expanded='true']//span[@class='text'][normalize-space()='ALL']")
+//    @FindBy(xpath = "//div[@aria-expanded='true']//span[@class='text'][normalize-space()='ALL']")
+    @FindBy(xpath = "//div[@class='dropdown-menu show']//input[@aria-label='Search']")
     WebElement branchAll;
 
     @FindBy(xpath = "//button[@title='-- Unit --']//div[@class='filter-option']")
     WebElement unit;
 
 //    @FindBy(xpath = "//span[normalize-space()='ALL']")
-    @FindBy(xpath = "//div[@aria-expanded='true']//span[@class='text'][normalize-space()='ALL']")
+//    @FindBy(xpath = "//div[@aria-expanded='true']//span[@class='text'][normalize-space()='ALL']")
+    @FindBy(xpath = "//div[@class='dropdown-menu show']//input[@aria-label='Search']")
     WebElement unitAll;
 
     @FindBy(xpath = "//input[@id='datepicker']")
@@ -67,23 +71,26 @@ public class ReportPage {
         position.click();
     }
 
-    public void positionAll(){
-        positionAll.click();
+    public void positionAll (String positionAll){
+        this.positionAll.sendKeys(positionAll);
+        this.positionAll.sendKeys(Keys.ENTER);
     }
 
     public void branch(){
         branch.click();
     }
 
-    public void branchAll(){
-        branchAll.click();
+    public void branchAll(String branchAll){
+        this.branchAll.sendKeys(branchAll);
+        this.branchAll.sendKeys(Keys.ENTER);
     }
 
     public void unit(){
         unit.click();
     }
-    public void unitAll(){
-        unitAll.click();
+    public void unitAll(String unitAll){
+        this.unitAll.sendKeys(unitAll);
+        this.unitAll.sendKeys(Keys.ENTER);
     }
 
     public void startDate (String startDate){

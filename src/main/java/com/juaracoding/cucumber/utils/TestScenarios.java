@@ -22,11 +22,17 @@ public enum TestScenarios {
     T13("TCC.TMS.004 user invalid absen pulang"),
     T14("TCC.TMS.005 user invalid absen pulang"),
     T15("TCC.TMS.006 user invalid absen pulang"),
-    T16("TCC.TMS.001 user valid absen pulang");
+    T16("TCC.TMS.001 user valid absen pulang"),
 
 
-//    T4("TCC.TMS.008 user valid absen pulang"),
-//    T5("TCC.TMS.015 user valid absen sakit");
+    //ReportAbsenSakitAdmin
+    T17 ("TCC.TMS.001 user invalid absen sakit"),
+    T18("TCC.TMS.002 user invalid absen sakit"),
+    T19("TCC.TMS.003 user invalid absen sakit"),
+    T20("TCC.TMS.004 user invalid absen sakit"),
+    T21("TCC.TMS.005 user invalid absen sakit"),
+    T22("TCC.TMS.006 user invalid absen sakit"),
+    T23("TCC.TMS.001 user valid absen sakit");
 
 //    T4("TCC.TMS.008 user valid absen pulang");
 

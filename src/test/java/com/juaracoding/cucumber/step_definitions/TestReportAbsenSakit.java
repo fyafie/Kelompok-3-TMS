@@ -6,6 +6,7 @@ import com.relevantcodes.extentreports.LogStatus;
 import com.relevantcodes.extentreports.model.Log;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
 
 import java.nio.file.WatchEvent;
@@ -40,7 +41,8 @@ public class TestReportAbsenSakit {
     }
     @When("TCC.sakit user select position")
     public void tcc_sakit_user_select_position() {
-        reportAbsenSakit.position();
+        reportAbsenSakit.positionAll("All");
+
         extentTest.log(LogStatus.PASS, "user select position");
     }
     @When("TCC.sakit user click branch")
@@ -50,7 +52,7 @@ public class TestReportAbsenSakit {
     }
     @When("TCC.sakit user select branch")
     public void tcc_sakit_user_select_branch() {
-       reportAbsenSakit.branchAll();
+       reportAbsenSakit.branchAll("All");
        extentTest.log(LogStatus.PASS, "user select branch");
     }
     @When("TCC.sakit user click unit")
@@ -60,7 +62,7 @@ public class TestReportAbsenSakit {
     }
     @When("TCC.sakit user select unit")
     public void tcc_sakit_user_select_unit() {
-        reportAbsenSakit.unit();
+        reportAbsenSakit.unitAll("All");
         extentTest.log(LogStatus.PASS, "user select unit");
     }
     @When("TCC.sakit user input start date")
@@ -78,6 +80,32 @@ public class TestReportAbsenSakit {
         reportAbsenSakit.submit();
         extentTest.log(LogStatus.PASS, "user valid report sakit");
     }
+
+    @When("TCC.sakit user invalid report sakit")
+    public void tcc_sakit_user_invalid_report_sakit() {
+        reportAbsenSakit.submit();
+        extentTest.log(LogStatus.PASS, "user invalid report sakit");
+    }
+
+    @Then("TCC.sakit user get alert no data")
+    public void tcc_sakit_user_get_alert_no_data() {
+        Alert alert = driver.switchTo().alert();
+        String alertMessage= driver.switchTo().alert().getText();
+        alert.accept();
+    }
+
+    @When("TCC.sakit user input invalid start date")
+    public void tcc_sakit_user_input_invalid_start_date() {
+        reportAbsenSakit.startDate("2022-09-01");
+        extentTest.log(LogStatus.PASS, "user input invalid start date");
+    }
+
+    @When("TCC.sakit user input invalid end date")
+    public void tcc_sakit_user_input_invalid_end_date() {
+        reportAbsenSakit.startDate("2022-11-27");
+        extentTest.log(LogStatus.PASS, "user input invalid end date");
+    }
+
 
 
 }

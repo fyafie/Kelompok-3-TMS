@@ -42,7 +42,7 @@ public class TestReportAbsenPulang {
 
     @When("TCC.pulang user select position")
     public void tcc_pulang_user_select_position() {
-        reportAbsenPulang.positionAll();
+        reportAbsenPulang.positionAll("All");
         extentTest.log(LogStatus.PASS, "user select position");
     }
 
@@ -54,7 +54,7 @@ public class TestReportAbsenPulang {
 
     @When("TCC.pulang user select branch")
     public void tcc_pulang_user_select_branch() {
-        reportAbsenPulang.branchAll();
+        reportAbsenPulang.branchAll("All");
         extentTest.log(LogStatus.PASS, "user select branch");
     }
 
@@ -66,7 +66,7 @@ public class TestReportAbsenPulang {
 
     @When("TCC.pulang user select unit")
     public void tcc_pulang_user_select_unit() {
-        reportAbsenPulang.unitAll();
+        reportAbsenPulang.unitAll("All");
         extentTest.log(LogStatus.PASS, "user select unit");
     }
 

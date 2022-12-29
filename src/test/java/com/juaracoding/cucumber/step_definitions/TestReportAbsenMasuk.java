@@ -46,7 +46,7 @@ public class TestReportAbsenMasuk {
 
     @And("user select position")
     public void user_select_position() {
-        reportPage.positionAll();
+        reportPage.positionAll("All");
         extentTest.log(LogStatus.PASS, "user select position");
     }
     @And("User invalid report masuk")
@@ -68,7 +68,7 @@ public class TestReportAbsenMasuk {
 
     @And("user select branch")
     public void user_select_branch() {
-        reportPage.branchAll();
+        reportPage.branchAll("All");
         extentTest.log(LogStatus.PASS, "user select branch");
     }
 
@@ -80,7 +80,7 @@ public class TestReportAbsenMasuk {
 
     @And("user select unit")
     public void user_select_unit() {
-        reportPage.unitAll();
+        reportPage.unitAll("All");
         extentTest.log(LogStatus.PASS, "user select unit");
     }
 
