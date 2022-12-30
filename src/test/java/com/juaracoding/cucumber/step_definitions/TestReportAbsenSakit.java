@@ -8,6 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import java.nio.file.WatchEvent;
 
@@ -67,12 +68,12 @@ public class TestReportAbsenSakit {
     }
     @When("TCC.sakit user input start date")
     public void tcc_sakit_user_input_start_date() {
-        reportAbsenSakit.startDate("2022-12-27");
+        reportAbsenSakit.startDate("2022-11-01");
         extentTest.log(LogStatus.PASS, "user input start date");
     }
     @When("TCC.sakit user input end date")
     public void tcc_sakit_user_input_end_date() {
-       reportAbsenSakit.endDate("2022-12-27");
+       reportAbsenSakit.endDate("2022-11-27");
        extentTest.log(LogStatus.PASS, "user input end date");
     }
     @Then("TCC.sakit User valid report sakit")
@@ -91,6 +92,15 @@ public class TestReportAbsenSakit {
     public void tcc_sakit_user_get_alert_no_data() {
         Alert alert = driver.switchTo().alert();
         String alertMessage= driver.switchTo().alert().getText();
+        Assert.assertEquals(alertMessage, "No data...!!!");
+        alert.accept();
+    }
+
+    @Then("TCC.sakit user get alert maximal date")
+    public void tcc_sakit_user_get_alert_maximal_date() {
+        Alert alert = driver.switchTo().alert();
+        String alertMessage= driver.switchTo().alert().getText();
+        Assert.assertEquals(alertMessage, "Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!");
         alert.accept();
     }
 
@@ -102,7 +112,7 @@ public class TestReportAbsenSakit {
 
     @When("TCC.sakit user input invalid end date")
     public void tcc_sakit_user_input_invalid_end_date() {
-        reportAbsenSakit.startDate("2022-11-27");
+        reportAbsenSakit.endDate("2022-12-27");
         extentTest.log(LogStatus.PASS, "user input invalid end date");
     }
 

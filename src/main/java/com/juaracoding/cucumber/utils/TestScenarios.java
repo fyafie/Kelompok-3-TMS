@@ -34,8 +34,6 @@ public enum TestScenarios {
     T22("TCC.TMS.006 user invalid absen sakit"),
     T23("TCC.TMS.001 user valid absen sakit");
 
-//    T4("TCC.TMS.008 user valid absen pulang");
-
     private String testName;
 
     TestScenarios(String value) {

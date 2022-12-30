@@ -47,7 +47,7 @@ Scenario: TCC.TMS.002 user invalid absen
     And user select unit
     And user input end date
     And User invalid report masuk
-    Then user get alert no data
+    Then user get alert maximal date
 
   Scenario: TCC.TMS.005 user invalid absen
     When User click Report Absen
@@ -59,7 +59,7 @@ Scenario: TCC.TMS.002 user invalid absen
     And user select unit
     And user input start date
     And User invalid report masuk
-    Then user get alert no data
+    Then user get alert maximal date
 
   Scenario: TCC.TMS.006 user invalid absen
     When User click Report Absen

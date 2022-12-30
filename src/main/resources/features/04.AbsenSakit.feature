@@ -46,7 +46,9 @@ Feature: Absen Admin Sakit
     And TCC.sakit user click unit
     And TCC.sakit user select unit
     And TCC.sakit user input end date
-    Then TCC.sakit User valid report sakit
+    And TCC.sakit user invalid report sakit
+    Then TCC.sakit user get alert maximal date
+
 
   Scenario: TCC.TMS.005 user invalid absen sakit
     When TCC.sakit User click Report Absen
@@ -59,7 +61,8 @@ Feature: Absen Admin Sakit
     And TCC.sakit user select unit
     And TCC.sakit user input start date
     And TCC.sakit user invalid report sakit
-    Then TCC.sakit user get alert no data
+    Then TCC.sakit user get alert maximal date
+
 
   Scenario: TCC.TMS.006 user invalid absen sakit
     When TCC.sakit User click Report Absen
@@ -73,7 +76,7 @@ Feature: Absen Admin Sakit
     And TCC.sakit user input invalid start date
     And TCC.sakit user input invalid end date
     And TCC.sakit user invalid report sakit
-    Then TCC.sakit user get alert no data
+    Then TCC.sakit user get alert maximal date
 
   Scenario: TCC.TMS.001 user valid absen sakit
     When TCC.sakit User click Report Absen

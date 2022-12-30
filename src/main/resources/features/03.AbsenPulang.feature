@@ -46,7 +46,7 @@ Feature: Absen Admin Pulang
     And TCC.pulang user select unit
     And TCC.pulang user input end date
     And TCC.pulang User invalid report masuk
-    Then TCC.pulang user get alert no data
+    Then TCC.pulang user get maximal date
 
   Scenario:  TCC.TMS.005 user invalid absen pulang
     When TCC.pulang User click Report Absen
@@ -59,7 +59,7 @@ Feature: Absen Admin Pulang
     And TCC.pulang user select unit
     And TCC.pulang user input start date
     And TCC.pulang User invalid report masuk
-    Then TCC.pulang user get alert no data
+    Then TCC.pulang user get maximal date
 
   Scenario:  TCC.TMS.006 user invalid absen pulang
     When TCC.pulang User click Report Absen
@@ -73,7 +73,7 @@ Feature: Absen Admin Pulang
     And TCC.pulang user invalid input start date
     And TCC.pulang user invalid input end date
     And TCC.pulang User invalid report masuk
-    Then TCC.pulang user get alert no data
+    Then TCC.pulang user get maximal date
 
   Scenario: TCC.TMS.001 user valid absen pulang
     When TCC.pulang User click Report Absen

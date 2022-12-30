@@ -9,6 +9,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 
 public class TestReportAbsenPulang {
@@ -98,6 +99,15 @@ public class TestReportAbsenPulang {
     public void tcc_pulang_user_get_alert_no_data() {
         Alert alert = driver.switchTo().alert();
         String alertMessage= driver.switchTo().alert().getText();
+        Assert.assertEquals(alertMessage, "No data...!!!");
+        alert.accept();
+    }
+
+    @Then("TCC.pulang user get maximal date")
+    public void tcc_pulang_user_get_maximal_date() {
+        Alert alert = driver.switchTo().alert();
+        String alertMessage= driver.switchTo().alert().getText();
+        Assert.assertEquals(alertMessage, "Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!");
         alert.accept();
     }
 

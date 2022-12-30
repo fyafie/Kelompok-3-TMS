@@ -54,12 +54,15 @@ public class TestReportAbsenMasuk {
         reportPage.submit();
         extentTest.log(LogStatus.PASS, "user invalid report masuk");
     }
+
     @Then("user get alert no data")
     public void user_get_alert_no_data() {
         Alert alert = driver.switchTo().alert();
         String alertMessage= driver.switchTo().alert().getText();
+        Assert.assertEquals(alertMessage, "No data...!!!");
         alert.accept();
     }
+
     @And("user click branch")
     public void user_click_branch() {
         reportPage.branch();
@@ -111,6 +114,7 @@ public class TestReportAbsenMasuk {
     public void user_get_alert_maximal_date() {
         Alert alert = driver.switchTo().alert();
         String alertMessage= driver.switchTo().alert().getText();
+        Assert.assertEquals(alertMessage, "Maximal Penarikan Data adalah 1 Bulan / 31 Hari !!!");
         alert.accept();
     }
 
@@ -118,7 +122,6 @@ public class TestReportAbsenMasuk {
     public void user_valid_report_masuk() {
         reportPage.submit();
         extentTest.log(LogStatus.PASS, "user valid report masuk");
-//        Assert.assertEquals(reportPage.getTxtDashboard(), "Dashboard");
-//        extentTest.log(LogStatus.PASS, "User valid credentials");
     }
+
 }
