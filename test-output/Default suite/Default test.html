@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>22/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>41/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Dec 28 17:36:12 WIB 2022</td>
+<td>Started on:</td><td>Fri Dec 30 03:30:52 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>41 seconds (41775 ms)</td>
+<tr><td>Total time:</td><td>81 seconds (81305 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,62 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data parameter shifting invalid", "Parameter Shifting"</td>
+<td><div><pre>java.lang.AssertionError: expected [Form Add] but found [Tambah]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.cucumber.step_definitions.TestParameterShifting.user_get_field_edit_null_alert_shifting(TestParameterShifting.java:91)
+	at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelompok-3-TMS/src/main/resources/features/07.ParameterShifting.feature:27)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1500821480", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1500821480'><pre>java.lang.AssertionError: expected [Form Add] but found [Tambah]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.cucumber.step_definitions.TestParameterShifting.user_get_field_edit_null_alert_shifting(TestParameterShifting.java:91)
+	at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelompok-3-TMS/src/main/resources/features/07.ParameterShifting.feature:27)
+</pre></div></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cancel edit data master position", "Master Position"</td>
+<td><div><pre>java.lang.AssertionError: expected [https://dev.ptdika.com/tiket.com/position_tms/master_p_tms] but found [https://dev.ptdika.com/tiket.com/position_tms]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.cucumber.step_definitions.TestMasterPosition.user_back_to_master_position_page(TestMasterPosition.java:112)
+	at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-TMS/src/main/resources/features/09.MasterPosition.feature:33)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1371045367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1371045367'><pre>java.lang.AssertionError: expected [https://dev.ptdika.com/tiket.com/position_tms/master_p_tms] but found [https://dev.ptdika.com/tiket.com/position_tms]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at com.juaracoding.cucumber.step_definitions.TestMasterPosition.user_back_to_master_position_page(TestMasterPosition.java:112)
+	at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-TMS/src/main/resources/features/09.MasterPosition.feature:33)
+</pre></div></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,97 +131,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 25 data parameter shifting", "Parameter Shifting"</td>
-<td></td>
-<td>5</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login invalid username and invalid password", "Login User"</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login invalid username and valid password", "Login User"</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login null username and valid password", "Login User"</td>
-<td></td>
-<td>0</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete data parameter shifting", "Parameter Shifting"</td>
-<td></td>
-<td>3</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login null username and null password", "Login User"</td>
-<td></td>
-<td>0</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data parameter shifting invalid", "Parameter Shifting"</td>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 100 data parameter shifting", "Parameter Shifting"</td>
 <td></td>
 <td>2</td>
 <td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
 <tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go to invalid website", "Login User"</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data parameter shifting valid", "Parameter Shifting"</td>
-<td></td>
-<td>3</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User valid login", "Login User"</td>
-<td></td>
-<td>2</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data parameter shifting valid", "Parameter Shifting"</td>
-<td></td>
-<td>3</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login valid username and null password", "Login User"</td>
-<td></td>
-<td>0</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login valid username and invalid password", "Login User"</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go to website", "Login User"</td>
-<td></td>
-<td>2</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search data parameter shifting", "Parameter Shifting"</td>
-<td></td>
-<td>0</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 50 data parameter shifting", "Parameter Shifting"</td>
-<td></td>
-<td>0</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data kerja penempatan invalid", "Kerja Penempatan"</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cancel delete data parameter shifting", "Parameter Shifting"</td>
-<td></td>
-<td>1</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
-<tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 10 data parameter shifting", "Parameter Shifting"</td>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 50 data kerja penempatan", "Kerja Penempatan"</td>
 <td></td>
 <td>2</td>
 <td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
@@ -175,14 +146,194 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
 <tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cancel delete data parameter shifting", "Parameter Shifting"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search data kerja penempatan", "Kerja Penempatan"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 10 data parameter shifting", "Parameter Shifting"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data parameter shifting valid", "Parameter Shifting"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data kerja penempatan valid", "Kerja Penempatan"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login invalid username and valid password", "Login User"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data master position invalid", "Master Position"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
 <td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login null username and invalid password", "Login User"</td>
 <td></td>
 <td>0</td>
 <td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
 <tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 100 data parameter shifting", "Parameter Shifting"</td>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data parameter shifting invalid", "Parameter Shifting"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Delete data parameter shifting", "Parameter Shifting"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User valid login", "Login User"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cancel edit data kerja penempatan", "Kerja Penempatan"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data kerja penempatan invalid", "Kerja Penempatan"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go to website", "Login User"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 10 data kerja position", "Master Position"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login null username and null password", "Login User"</td>
 <td></td>
 <td>0</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search data parameter shifting", "Parameter Shifting"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data kerja penempatan invalid", "Kerja Penempatan"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data kerja penempatan valid", "Kerja Penempatan"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data parameter shifting valid", "Parameter Shifting"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login null username and valid password", "Login User"</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 100 data kerja penempatan", "Kerja Penempatan"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Add data master position valid", "Master Position"</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User go to invalid website", "Login User"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login valid username and null password", "Login User"</td>
+<td></td>
+<td>0</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 25 data parameter shifting", "Parameter Shifting"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data master position invalid", "Master Position"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 50 data parameter shifting", "Parameter Shifting"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login invalid username and invalid password", "Login User"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 100 data kerja position", "Master Position"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Edit data master position valid", "Master Position"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Cancel Add data parameter shifting", "Parameter Shifting"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 10 data kerja penempatan", "Kerja Penempatan"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login valid username and invalid password", "Login User"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search data kerja position", "Master Position"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 25 data kerja penempatan", "Kerja Penempatan"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 25 data kerja position", "Master Position"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Show 50 data kerja position", "Master Position"</td>
+<td></td>
+<td>1</td>
 <td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
 </table><p>
 </body>
