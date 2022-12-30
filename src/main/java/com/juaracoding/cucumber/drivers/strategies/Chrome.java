@@ -6,11 +6,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Chrome implements DriverStrategy {
     public WebDriver setStrategy() {
-        System.setProperty("webdriver.chrome.driver", "C:\\webdrivers\\chromedriver.exe"); //WebDriversManagers.chrome.setup();
+        System.setProperty("webdriver.chrome.driver", "D:\\Eclipse\\Driver\\chromedriver.exe"); //WebDriversManagers.chrome.setup();
         ChromeOptions options = new ChromeOptions();
         options.setExperimentalOption("useAutomationExtension", false);
         options.addArguments("--no-sandbox");
-
-        return new ChromeDriver(options);
+        options.addArguments("--window-size=1366x768");
+        
+        return new ChromeDriver(options);       
     }
 }

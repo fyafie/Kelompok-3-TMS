@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>29/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Dec 18 23:35:52 WIB 2022</td>
+<td>Started on:</td><td>Fri Dec 30 00:15:37 WIB 2022</td>
 </tr>
-<tr><td>Total time:</td><td>10 seconds (10358 ms)</td>
+<tr><td>Total time:</td><td>108 seconds (108020 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,30 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User valid login", "Login User"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;&gt; but was:&lt;Dashboard&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at com.juaracoding.cucumber.step_definitions.TestLogin.user_valid_credentials(TestLogin.java:56)
+	at ✽.User valid credentials(file:///C:/Users/ASUS%20Notebook/git/Kelompok-3-TMS/src/main/resources/features/01.Login.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2022417982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2022417982'><pre>java.lang.AssertionError: expected:&lt;&gt; but was:&lt;Dashboard&gt;
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+	at com.juaracoding.cucumber.step_definitions.TestLogin.user_valid_credentials(TestLogin.java:56)
+	at ✽.User valid credentials(file:///C:/Users/ASUS%20Notebook/git/Kelompok-3-TMS/src/main/resources/features/01.Login.feature:13)
+</pre></div></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,15 +99,150 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User valid login", "Login User"</td>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.024 Previous Page md", "Managemen Divisi"</td>
 <td></td>
-<td>0</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
 <tr>
-<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User invalid login", "Login User"</td>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.012 Edit Division Name", "Tambah Divisi"</td>
+<td></td>
+<td>5</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.022 Next Page md", "Managemen Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.017 admin menambahkan managemen divisi baru tanpa mengisi nama supervisor", "Managemen Divisi"</td>
 <td></td>
 <td>6</td>
-<td>com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b</td></tr>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.025 Search Nama Divisi Ada md", "Managemen Divisi"</td>
+<td></td>
+<td>5</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.011 Search Nama Divisi Tidak Ada", "Tambah Divisi"</td>
+<td></td>
+<td>5</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.009 Previous Page", "Tambah Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.003 Show Entries 10", "Tambah Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.010 Search Nama Divisi Ada", "Tambah Divisi"</td>
+<td></td>
+<td>5</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.002 Admin tidak input nama divisi baru", "Tambah Divisi"</td>
+<td></td>
+<td>2</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.014 admin menambahkan managemen divisi baru dup", "Managemen Divisi"</td>
+<td></td>
+<td>7</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.023 Nomor Page md", "Managemen Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.020 Show Entries 50 md", "Managemen Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.019 Show Entries 25 md", "Managemen Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.026 Search Nama Divisi Tidak Ada md", "Managemen Divisi"</td>
+<td></td>
+<td>5</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.018 Show Entries 10 md", "Managemen Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.008 Nomor Page", "Tambah Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.016 admin menambahkan managemen divisi baru tanpa mengisi nik team leader", "Managemen Divisi"</td>
+<td></td>
+<td>6</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User login invalid username and invalid password", "Login User"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.015 admin menambahkan managemen divisi baru tanpa memilih nama divisi", "Managemen Divisi"</td>
+<td></td>
+<td>5</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.001 Admin menambahkan divisi baru", "Tambah Divisi"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.005 Show Entries 50", "Tambah Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.021 Show Entries 100 md", "Managemen Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.028 Delete Division Name md", "Managemen Divisi"</td>
+<td></td>
+<td>3</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.006 Show Entries 100", "Tambah Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.004 Show Entries 25", "Tambah Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.013 admin menambahkan managemen divisi baru", "Managemen Divisi"</td>
+<td></td>
+<td>8</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.007 Next Page", "Tambah Divisi"</td>
+<td></td>
+<td>1</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
+<tr>
+<td title='com.juaracoding.cucumber.step_definitions.RunnerTest.runScenario()'><b>runScenario</b><br>Test class: com.juaracoding.cucumber.step_definitions.RunnerTest<br>Test method: Runs Cucumber Scenarios<br>Parameters: "TCC.TMS.027 Edit Division Name md", "Managemen Divisi"</td>
+<td></td>
+<td>4</td>
+<td>com.juaracoding.cucumber.step_definitions.RunnerTest@2fb3536e</td></tr>
 </table><p>
 </body>
 </html>
