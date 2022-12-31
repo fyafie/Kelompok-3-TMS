@@ -62,3 +62,8 @@ Feature: Login User
     And User click button login
     Then User valid credentials
     
+  Scenario: User valid logout
+    When User click profile
+    When User click logout button
+    Then User back to login page
+    

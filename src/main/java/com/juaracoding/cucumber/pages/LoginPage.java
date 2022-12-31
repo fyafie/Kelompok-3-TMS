@@ -35,6 +35,12 @@ public class LoginPage {
     @FindBy(xpath = "//div[1]/div[1]/small")
     WebElement validWebsite;
     
+    @FindBy(xpath = "//a[@class='dropdown-toggle']")
+    WebElement profile;
+    
+    @FindBy(xpath = "//a[normalize-space()='Log Out']")
+    WebElement logoutButton;
+    
     public String getInvalidWebsite() {
     	return invalidWebsite.getText();
     }
@@ -63,4 +69,10 @@ public class LoginPage {
     public String getUsernameNullAlert() {
     	return username.getText();
     }
+    public void clickProfile() {
+		profile.click();
+	}
+    public void clickLogoutButton() {
+		logoutButton.click();
+	}
 }

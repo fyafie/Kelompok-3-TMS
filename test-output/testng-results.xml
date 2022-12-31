@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="43" passed="41" failed="2" skipped="0">
+<testng-results ignored="0" total="44" passed="42" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-30T03:30:52 WIB" name="Default suite" finished-at="2022-12-30T03:32:14 WIB" duration-ms="81305">
+  <suite started-at="2022-12-30T23:17:59 WIB" name="Default suite" finished-at="2022-12-30T23:19:33 WIB" duration-ms="94332">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-12-30T03:30:52 WIB" name="Default test" finished-at="2022-12-30T03:32:14 WIB" duration-ms="81305">
+    <test started-at="2022-12-30T23:17:59 WIB" name="Default test" finished-at="2022-12-30T23:19:33 WIB" duration-ms="94332">
       <class name="com.juaracoding.cucumber.step_definitions.RunnerTest">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:52 WIB" name="setUpClass" finished-at="2022-12-30T03:30:53 WIB" duration-ms="383" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:17:59 WIB" name="setUpClass" finished-at="2022-12-30T23:17:59 WIB" duration-ms="476" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4567fb2b]]>
+                <![CDATA[org.testng.TestRunner@25e8e59]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:53 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:30:54 WIB" duration-ms="1577" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:17:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:01 WIB" duration-ms="1531" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:54 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:30:56 WIB" duration-ms="1724" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:01 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:03 WIB" duration-ms="1810" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:56 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:30:56 WIB" duration-ms="232" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:03 WIB" duration-ms="289" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:56 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:30:57 WIB" duration-ms="309" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:03 WIB" duration-ms="250" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,7 +85,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:30:57 WIB" duration-ms="273" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:03 WIB" duration-ms="275" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -101,7 +101,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:30:57 WIB" duration-ms="238" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:04 WIB" duration-ms="269" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -117,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:30:58 WIB" duration-ms="1276" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:04 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:05 WIB" duration-ms="1353" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,7 +133,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:30:58 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:00 WIB" duration-ms="1305" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:05 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:06 WIB" duration-ms="1343" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -149,7 +149,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:00 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:00 WIB" duration-ms="230" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:07 WIB" duration-ms="313" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -165,7 +165,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:00 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:01 WIB" duration-ms="1351" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:07 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:08 WIB" duration-ms="1319" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -181,7 +181,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:01 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:03 WIB" duration-ms="2106" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:08 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:10 WIB" duration-ms="2262" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -197,7 +197,23 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:06 WIB" duration-ms="2511" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:11 WIB" duration-ms="852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User valid logout"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login User"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:11 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:14 WIB" duration-ms="2549" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -213,7 +229,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:06 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:09 WIB" duration-ms="3156" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:14 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:17 WIB" duration-ms="2948" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:12 WIB" duration-ms="2536" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:17 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:19 WIB" duration-ms="2902" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +261,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:12 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:15 WIB" duration-ms="3890" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:19 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:24 WIB" duration-ms="4348" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -278,7 +294,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:15 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:19 WIB" duration-ms="3724" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:24 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:27 WIB" duration-ms="3656" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -294,7 +310,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:19 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:22 WIB" duration-ms="3310" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:27 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:31 WIB" duration-ms="3355" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -310,7 +326,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:24 WIB" duration-ms="1324" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:31 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:32 WIB" duration-ms="1348" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -326,7 +342,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:24 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:25 WIB" duration-ms="1277" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:32 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:33 WIB" duration-ms="1308" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -342,7 +358,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:25 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:26 WIB" duration-ms="1271" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:33 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:35 WIB" duration-ms="1282" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -358,7 +374,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:26 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:30 WIB" duration-ms="3824" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:35 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:36 WIB" duration-ms="1273" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -374,7 +390,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:30 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:33 WIB" duration-ms="2571" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:37 WIB" duration-ms="1321" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -390,7 +406,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:33 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:35 WIB" duration-ms="2149" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:37 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:39 WIB" duration-ms="1350" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -406,7 +422,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:35 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:36 WIB" duration-ms="1345" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:39 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:40 WIB" duration-ms="1147" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -422,7 +438,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:36 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:38 WIB" duration-ms="1530" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:40 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:43 WIB" duration-ms="3145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -438,7 +454,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:38 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:41 WIB" duration-ms="3219" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:18:59 WIB" duration-ms="16242" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -454,7 +470,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:41 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:43 WIB" duration-ms="2155" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:18:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:04 WIB" duration-ms="4289" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -470,7 +486,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:43 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:47 WIB" duration-ms="3797" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:04 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:08 WIB" duration-ms="4440" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -486,7 +502,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:47 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:49 WIB" duration-ms="2005" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:08 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:10 WIB" duration-ms="2106" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -502,7 +518,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:49 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:51 WIB" duration-ms="2455" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:10 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:12 WIB" duration-ms="2064" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -518,7 +534,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:51 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:54 WIB" duration-ms="2468" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:12 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:14 WIB" duration-ms="1998" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -534,7 +550,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:54 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:56 WIB" duration-ms="1960" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:14 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:16 WIB" duration-ms="2066" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -550,7 +566,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:56 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:57 WIB" duration-ms="1026" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:16 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:17 WIB" duration-ms="1193" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -566,7 +582,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:57 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:31:59 WIB" duration-ms="2283" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:17 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:20 WIB" duration-ms="2326" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -582,7 +598,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:31:59 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:00 WIB" duration-ms="515" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:20 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:20 WIB" duration-ms="579" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -598,7 +614,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:00 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:01 WIB" duration-ms="1205" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:20 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:21 WIB" duration-ms="1089" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -614,7 +630,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:01 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:02 WIB" duration-ms="1092" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:21 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:22 WIB" duration-ms="773" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -630,7 +646,7 @@ at ✽.User get field edit null alert shifting(file:///C:/Users/fauza/git/Kelomp
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:02 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:03 WIB" duration-ms="1484" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:22 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:23 WIB" duration-ms="928" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -663,7 +679,7 @@ at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-T
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:03 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:05 WIB" duration-ms="1904" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:23 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:24 WIB" duration-ms="1254" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -679,7 +695,7 @@ at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-T
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:05 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:07 WIB" duration-ms="1246" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:24 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:26 WIB" duration-ms="1292" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -695,7 +711,7 @@ at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-T
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:07 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:08 WIB" duration-ms="1250" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:26 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:27 WIB" duration-ms="1373" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -711,7 +727,7 @@ at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-T
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:08 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:09 WIB" duration-ms="1284" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:27 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:28 WIB" duration-ms="1315" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -727,7 +743,7 @@ at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-T
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:09 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T03:32:10 WIB" duration-ms="1295" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:28 WIB" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-12-30T23:19:30 WIB" duration-ms="1387" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -743,7 +759,7 @@ at ✽.User back to master position page(file:///C:/Users/fauza/git/Kelompok-3-T
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T03:32:10 WIB" name="tearDownClass" finished-at="2022-12-30T03:32:14 WIB" duration-ms="3169" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.juaracoding.cucumber.step_definitions.RunnerTest@56cdfb3b]" started-at="2022-12-30T23:19:30 WIB" name="tearDownClass" finished-at="2022-12-30T23:19:33 WIB" duration-ms="3269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -148,4 +148,22 @@ public class TestLogin {
     	extentTest.log(LogStatus.PASS, "User valid credentials");
     }
     //T11 User valid login
+    //User valid logout
+    @When("User click profile")
+    public void user_click_profile() {
+    	loginPage.clickProfile();
+    	extentTest.log(LogStatus.PASS, "User click profile");
+    }
+    @When("User click logout button")
+    public void user_click_logout_button() {
+    	loginPage.clickLogoutButton();
+    	extentTest.log(LogStatus.PASS, "User click logout button");
+    }
+    @Then("User back to login page")
+    public void User_back_to_login_page() {
+    	Assert.assertEquals(driver.getCurrentUrl(), "https://dev.ptdika.com/tiket.com/login");
+    	extentTest.log(LogStatus.PASS, "User back to login page");
+    	loginPage.login("admin_tms", "d1k4@passw0rd");
+    	loginPage.clickBtnLogin();
+    }
 }
