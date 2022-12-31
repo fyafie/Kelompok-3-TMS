@@ -20,7 +20,7 @@ public class TestLogin {
         driver = Hooks.driver;
         extentTest = Hooks.extentTest;
     }
-    //T1 User go to invalid Web SIT
+    //T1 User go to invalid Web SIT.
     @When("User go to invalid Web SIT")
     public void user_go_to_invalid_web_sit() {
     	driver.get(Constants.URL2);
