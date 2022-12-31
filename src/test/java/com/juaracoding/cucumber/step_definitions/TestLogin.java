@@ -40,7 +40,7 @@ public class TestLogin {
 
     @And("User enter username password valid")
     public void user_enter_username_password_valid() {
-        loginPage.login("admin_tms", "d1k4@passw0rd");
+        loginPage.login("D6200927", "1997-10-23");
         extentTest.log(LogStatus.PASS, "User enter username password valid");
     }
 
@@ -52,6 +52,7 @@ public class TestLogin {
     
     @Then("User valid credentials")
     public void user_valid_credentials() {
+    	Hooks.delay(2);
     	Assert.assertEquals(loginPage.getDashboardTxt(), "Dashboard");
     	extentTest.log(LogStatus.PASS, "User valid credentials");
     }
