@@ -14,6 +14,9 @@ public class LoginPage {
         PageFactory.initElements(driver, this);
     }
 
+    @FindBy(xpath = "//h1")
+    WebElement invalidWebsite;
+    
     @FindBy(name = "username")
     WebElement username;
 
@@ -26,6 +29,24 @@ public class LoginPage {
     @FindBy(xpath = "//h1[@class='page-header']")
     WebElement dashboardTxt;
     
+    @FindBy(xpath = "//div[@class='alert alert-danger alert-dismissable']/button")
+    WebElement invalidAlert;
+    
+    @FindBy(xpath = "//div[1]/div[1]/small")
+    WebElement validWebsite;
+    
+    @FindBy(xpath = "//a[@class='dropdown-toggle']")
+    WebElement profile;
+    
+    @FindBy(xpath = "//a[normalize-space()='Log Out']")
+    WebElement logoutButton;
+    
+    public String getInvalidWebsite() {
+    	return invalidWebsite.getText();
+    }
+    public String getValidWebsite() {
+    	return validWebsite.getText();
+    }
     public void login(String username, String password){
         this.username.sendKeys(username);
         this.password.sendKeys(password);
@@ -38,4 +59,20 @@ public class LoginPage {
     public String getDashboardTxt() {
     	return dashboardTxt.getText();
     }
+    
+    public String getInvalidAlert() {
+		return invalidAlert.getText();
+	}
+    public String getPasswordNullAlert() {
+    	return password.getText();
+    }
+    public String getUsernameNullAlert() {
+    	return username.getText();
+    }
+    public void clickProfile() {
+		profile.click();
+	}
+    public void clickLogoutButton() {
+		logoutButton.click();
+	}
 }
