@@ -124,6 +124,33 @@ public class TestReportAbsenPulang {
     }
 
 
+    @When("user input search pulang")
+    public void user_input_search_pulang() {
+        reportAbsenPulang.search("elva");
+        extentTest.log(LogStatus.PASS, "user input search");
+    }
 
+    @Then("user get input pulang")
+    public void user_get_input_pulang() {
+        Assert.assertEquals(reportAbsenPulang.inputSearch(), "ELVA YUNDRA RINDYANA");
+        extentTest.log(LogStatus.PASS, "user get input pulang");
+    }
 
+    @When("TCC.pulang user select branch branch")
+    public void tcc_pulang_user_select_branch_branch() {
+        reportAbsenPulang.branchAll("Jakarta");
+        extentTest.log(LogStatus.PASS, "user select branch");
+
+    }
+    @When("TCC.pulang user select position position")
+    public void tcc_pulang_user_select_position_position() {
+        reportAbsenPulang.positionAll("Programmer");
+        extentTest.log(LogStatus.PASS, "user select position");
+    }
+
+    @When("TCC.pulang user select unit unit")
+    public void tcc_pulang_user_select_unit_unit() {
+        reportAbsenPulang.unitAll("Merchant Delivery & Survey");
+        extentTest.log(LogStatus.PASS, "user select unit");
+    }
 }

@@ -49,6 +49,12 @@ public class ReportAbsenSakit {
     @FindBy(xpath = "//input[@name='submit']")
     WebElement submit;
 
+    @FindBy(xpath = "//input[@type='search']")
+    WebElement search;
+
+    @FindBy(xpath = "//td[normalize-space()='ELVA YUNDRA RINDYANA']")
+    WebElement inputSearch;
+
     public void menuReportAbsen(){
         menuReportAbsenSakit.click();
     }
@@ -93,6 +99,14 @@ public class ReportAbsenSakit {
 
     public void submit(){
         submit.click();
+    }
+
+    public void search(String search){
+        this.search.sendKeys(search);
+    }
+
+    public String inputSearch(){
+        return inputSearch.getText();
     }
 
 

@@ -50,6 +50,12 @@ public class ReportAbsenPulang {
     @FindBy(xpath = "//input[@name='submit']")
     WebElement submit;
 
+    @FindBy(xpath = "//input[@type='search']")
+    WebElement search;
+
+    @FindBy(xpath = "//tbody/tr[3]/td[4]")
+    WebElement inputSearch;
+
     public void menuReportAbsen(){
         menuReportAbsenPulang.click();
     }
@@ -95,4 +101,14 @@ public class ReportAbsenPulang {
     public void submit(){
         submit.click();
     }
+
+    public void search(String search){
+        this.search.sendKeys(search);
+    }
+
+    public String inputSearch(){
+        return inputSearch.getText();
+    }
+
+
 }

@@ -124,4 +124,36 @@ public class TestReportAbsenMasuk {
         extentTest.log(LogStatus.PASS, "user valid report masuk");
     }
 
+    @When("user input search")
+    public void user_input_search() {
+        reportPage.search("elva");
+        extentTest.log(LogStatus.PASS, "user input search");
+    }
+
+    @Then("user get input")
+    public void user_get_input() {
+        Assert.assertEquals(reportPage.inputSearch(), "ELVA YUNDRA RINDYANA");
+        extentTest.log(LogStatus.PASS, "user get input");
+    }
+
+    @And("user select branch branch")
+    public void user_select_branch_branch() {
+        reportPage.branchAll("Jakarta");
+        extentTest.log(LogStatus.PASS, "user select branch");
+    }
+
+    @And("user select unit unit")
+    public void user_select_unit_unit() {
+        reportPage.unitAll("Merchant Delivery & Survey");
+        extentTest.log(LogStatus.PASS, "user select unit");
+    }
+    @When("user select position position")
+    public void user_select_position_position() {
+        reportPage.positionAll("Programmer");
+        extentTest.log(LogStatus.PASS, "user select position");
+    }
+
+
+
+
 }

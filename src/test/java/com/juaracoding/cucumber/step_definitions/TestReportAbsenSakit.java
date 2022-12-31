@@ -43,7 +43,6 @@ public class TestReportAbsenSakit {
     @When("TCC.sakit user select position")
     public void tcc_sakit_user_select_position() {
         reportAbsenSakit.positionAll("All");
-
         extentTest.log(LogStatus.PASS, "user select position");
     }
     @When("TCC.sakit user click branch")
@@ -116,7 +115,34 @@ public class TestReportAbsenSakit {
         extentTest.log(LogStatus.PASS, "user input invalid end date");
     }
 
+    @When("TCC.sakit user input search")
+    public void tcc_sakit_user_input_search() {
+        reportAbsenSakit.search("elva");
+        extentTest.log(LogStatus.PASS, "user input search");
+    }
 
+    @Then("TCC.sakit user get input")
+    public void tcc_sakit_user_get_input() {
+        Assert.assertEquals(reportAbsenSakit.inputSearch(), "ELVA YUNDRA RINDYANA");
+        extentTest.log(LogStatus.PASS, "user get input search");
+    }
 
+    @When("TCC.sakit user select branch branch")
+    public void tcc_sakit_user_select_branch_branch() {
+       reportAbsenSakit.branchAll("Jakarta");
+        extentTest.log(LogStatus.PASS, "user select branch");
+
+    }
+    @When("TCC.sakit user select position position")
+    public void tcc_sakit_user_select_position_position() {
+        reportAbsenSakit.positionAll("Programmer");
+        extentTest.log(LogStatus.PASS, "user select position");
+    }
+
+    @When("TCC.sakit user select unit unit")
+    public void tcc_sakit_user_select_unit_unit() {
+        reportAbsenSakit.unitAll("Merchant Delivery & Survey");
+        extentTest.log(LogStatus.PASS, "user select unit");
+    }
 }
 
