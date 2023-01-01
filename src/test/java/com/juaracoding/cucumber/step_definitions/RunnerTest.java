@@ -9,10 +9,11 @@ import io.cucumber.testng.CucumberOptions;
         		"src/main/resources/features/02.AbsenMasuk.feature",
                 "src/main/resources/features/03.AbsenPulang.feature",
                 "src/main/resources/features/04.AbsenSakit.feature",
+                "src/main/resources/features/05.TambahDivisi.feature",
+        		"src/main/resources/features/06.ManagemenDivisi.feature",
         		"src/main/resources/features/07.ParameterShifting.feature",
         		"src/main/resources/features/08.KerjaPenempatan.feature",
         		"src/main/resources/features/09.MasterPosition.feature",
-        		
         		},
         glue = "com.juaracoding.cucumber.step_definitions",
         plugin = {"pretty","html:target/cucumber-reports.html","json:target/cucumber.json"})
