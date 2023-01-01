@@ -49,6 +49,43 @@ public enum TestScenarios {
 	T42("Show 50 data kerja position"),
 	T43("Show 100 data kerja position"),
 	T44("Search data kerja position")
+	
+	//ReportAbsenMasukAdmin
+    T45("TCC.TMS.001 user invalid absen"),
+    T46("TCC.TMS.002 user invalid absen"),
+    T47("TCC.TMS.003 user invalid absen"),
+    T48("TCC.TMS.004 user invalid absen"),
+    T49("TCC.TMS.005 user invalid absen"),
+    T50("TCC.TMS.006 user invalid absen"),
+    T51("TCC.TMS.007 user invalid absen"),
+    T52("TCC.TMS.003 admin branch position spesifik"),
+    T53("TCC.TMS.001 user valid absen masuk"),
+    T54("TCC.TMS.002 admin search user"),
+
+    //ReportAbsenPulangAdmin
+    T55("TCC.TMS.001 user invalid absen pulang"),
+    T56("TCC.TMS.002 user invalid absen pulang"),
+    T57("TCC.TMS.003 user invalid absen pulang"),
+    T58("TCC.TMS.004 user invalid absen pulang"),
+    T59("TCC.TMS.005 user invalid absen pulang"),
+    T60("TCC.TMS.006 user invalid absen pulang"),
+    T61("TCC.TMS.007 user invalid absen pulang"),
+    T62("TCC.TMS.001 user valid absen pulang"),
+    T63("TCC.TMS.002 admin search user pulang"),
+    T64("TCC.TMS.003 user valid absen pulang branch spesifik"),
+
+
+    //ReportAbsenSakitAdmin
+    T65 ("TCC.TMS.001 user invalid absen sakit"),
+    T66("TCC.TMS.002 user invalid absen sakit"),
+    T67("TCC.TMS.003 user invalid absen sakit"),
+    T68("TCC.TMS.004 user invalid absen sakit"),
+    T69("TCC.TMS.005 user invalid absen sakit"),
+    T70("TCC.TMS.006 user invalid absen sakit"),
+    T71("TCC.TMS.001 user valid absen sakit"),
+    T72("TCC.TMS.002 admin search user sakit"),
+    T73("TCC.TMS.003 user valid absen sakit branch spesifik"),
+    T74("TCC.TMS.007 user invalid absen sakit");
 	;
 
     private String testName;
