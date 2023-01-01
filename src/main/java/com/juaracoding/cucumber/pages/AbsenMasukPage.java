@@ -13,7 +13,7 @@ public class AbsenMasukPage {
         this.driver = DriverSingleton.getDriver();
         PageFactory.initElements(driver, this);
     }   
-    @FindBy(xpath = "//input[@name='foto'])")
+    @FindBy(xpath = "//input[@name='foto']")
     WebElement uploadfoto;
 
     @FindBy(xpath = "//select[@name='divisi']/option[2]")
@@ -41,7 +41,7 @@ public class AbsenMasukPage {
     WebElement btnSubmit;
 
     public void uploadfoto(){
-        uploadfoto.sendKeys("D:Test2.jpg");
+        uploadfoto.sendKeys("D:\\Test2.jpg");
     }
     public void clickdivisi(){
         divisi.click();

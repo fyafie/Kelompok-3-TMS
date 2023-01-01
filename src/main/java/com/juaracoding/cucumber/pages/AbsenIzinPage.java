@@ -48,7 +48,7 @@ public class AbsenIzinPage {
         laporankegiatan.click();
     }
     public void uploadfoto(){
-        uploadfoto.sendKeys("D:\\Test\\2.jpg");
+        uploadfoto.sendKeys("D:\\Test2.jpg");
     }
     public void clickdivisi(){
         divisi.click();

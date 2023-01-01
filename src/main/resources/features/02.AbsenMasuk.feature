@@ -3,7 +3,7 @@ Feature: Absen Masuk
   Scenario: TCC01.Input kehadiran masuk kerja
     When TCC01.Tampilan Masuk
     And TCC01.Submit
-		Then TCC01.User mendapatkan pemberitahuan
+	Then TCC01.User mendapatkan pemberitahuan
   
   Scenario: TCC02.Input kehadiran masuk kerja
    	When TCC02.Upload foto selfie
