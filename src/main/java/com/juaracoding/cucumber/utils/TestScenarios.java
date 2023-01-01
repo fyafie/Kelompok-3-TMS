@@ -121,6 +121,26 @@ public enum TestScenarios {
 	T101("Show 100 data kerja position"),
 	T102("Search data kerja position"),
 	
+	//T2("Absen Masuk"),
+	T103("TCC01.Input kehadiran masuk kerja"),
+	T104("TCC02.Input kehadiran masuk kerja"),
+	T105("TCC03.Input kehadiran masuk kerja"),
+	
+	//T3("Absen Pulang"),
+	T106("TCC04.Input kehadiran pulang kerja"),
+	T107("TCC05.Input kehadiran pulang kerja"),
+	T108("TCC06. Input kehadiran pulang kerja"),
+	
+	//T2("Absen Izin"),
+	T109("TCC07.Input kehadiran izin"),
+	T110("TCC08.Input kehadiran izin"),
+	T111("TCC09. Input kehadiran izin"),
+	
+	//T2("Absen Sakit"),
+	T112("TCC10.Input kehadiran sakit"),
+	T113("TCC11.Input kehadiran sakit"),
+	T114("TCC12. Input kehadiran sakit"),
+	T115("TCC13. Input kehadiran sakit")
 	;
 
     private String testName;
