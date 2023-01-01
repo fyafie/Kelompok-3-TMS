@@ -11,5 +11,9 @@ public class Constants {
     public static final String URLPosition = "https://dev.ptdika.com/tiket.com/position_tms/master_p_tms";
     public static final String URLtambahDivisi = "https://dev.ptdika.com/tiket.com/admin/master_divisi";
     public static final String URLmanagemenDivisi = "https://dev.ptdika.com/tiket.com/admin/divisi";
+    public static final String URLMasuk = "https://dev.ptdika.com/tiket.com/absen/masuk";
+    public static final String URLPulang = "https://dev.ptdika.com/tiket.com/absen/pulang";
+    public static final String URLIzin = "https://dev.ptdika.com/tiket.com/absen/izin";
+    public static final String URLSakit = "https://dev.ptdika.com/tiket.com/absen/sakit";
     public static final int DETIK = 1;
 }
