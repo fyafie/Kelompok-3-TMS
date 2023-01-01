@@ -33,9 +33,6 @@ public class TestTambahDivisi {
     // TCC.TMS.001
     @When("Admin input Nama Divisi")
     public void admin_input_nama_divisi() {
-    	driver.get(Constants.URL);
-    	loginPage.login("admin_tms", "d1k4@passw0rd");
-    	loginPage.clickBtnLogin();
     	driver.get(Constants.URLtambahDivisi);
     	tambahDivisi.inputnamaDivisi("Sales");
         extentTest.log(LogStatus.PASS, "Admin input Nama Divisi");
