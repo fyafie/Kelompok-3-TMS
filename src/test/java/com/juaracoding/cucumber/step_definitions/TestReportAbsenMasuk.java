@@ -27,9 +27,6 @@ public class TestReportAbsenMasuk {
 
     @Given("user on menu dashboard")
     public void user_on_menu_dashboard() {
-    	driver.get(Constants.URL);
-    	loginPage.login("admin_tms", "d1k4@passw0rd");
-    	loginPage.clickBtnLogin();
     	Hooks.delay(2);
         Assert.assertEquals(reportPage.getTxtDashboard(), "Dashboard");
         extentTest.log(LogStatus.PASS, "User on menu Requirement");
