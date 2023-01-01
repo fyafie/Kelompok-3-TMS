@@ -14,6 +14,10 @@ import io.cucumber.testng.CucumberOptions;
         		"src/main/resources/features/07.ParameterShifting.feature",
         		"src/main/resources/features/08.KerjaPenempatan.feature",
         		"src/main/resources/features/09.MasterPosition.feature",
+        		"src/main/resources/features/10.AbsenMasuk.feature",
+        		"src/main/resources/features/11.AbsenPulang.feature",
+        		"src/main/resources/features/12.AbsenIzin.feature",
+        		"src/main/resources/features/13.AbsenSakit.feature"
         		},
         glue = "com.juaracoding.cucumber.step_definitions",
         plugin = {"pretty","html:target/cucumber-reports.html","json:target/cucumber.json"})
