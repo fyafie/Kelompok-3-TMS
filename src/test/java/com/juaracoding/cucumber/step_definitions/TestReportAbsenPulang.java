@@ -25,6 +25,7 @@ public class TestReportAbsenPulang {
 
     @When("TCC.pulang User click Report Absen")
     public void tcc_pulang_user_click_report_absen() {
+    	Hooks.delay(1);
         reportAbsenPulang.menuReportAbsen();
         extentTest.log(LogStatus.PASS, "User click Report Absen");
     }

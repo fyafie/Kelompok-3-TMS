@@ -33,6 +33,7 @@ public class TestReportAbsenMasuk {
     }
     @When("User click Report Absen")
     public void user_click_report_absen() {
+    	Hooks.delay(1);
         reportPage.menuReportAbsen();
         extentTest.log(LogStatus.PASS, "User click Report Absen");
     }
