@@ -48,7 +48,7 @@ public enum TestScenarios {
 	T41("Show 25 data kerja position"),
 	T42("Show 50 data kerja position"),
 	T43("Show 100 data kerja position"),
-	T44("Search data kerja position")
+	T44("Search data kerja position"),
 	
 	//ReportAbsenMasukAdmin
     T45("TCC.TMS.001 user invalid absen"),
